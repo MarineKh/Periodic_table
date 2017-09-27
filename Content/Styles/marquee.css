@@ -1,0 +1,157 @@
+@font-face {
+    font-family: title;
+    src: url(../Fonts/Sushi.ttf);
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+html, body, main {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background: #000;
+}
+main {
+	width: 1300px;
+
+    margin-bottom: 220px;
+    margin: auto;
+}
+div {
+	height: 57px;
+    width: 70px;
+
+	position: relative;
+
+	text-align: center;
+
+	display: table;
+}
+.zero-line {
+    padding-top: 20px;
+}
+#no-style {
+    width: 68px;
+
+    z-index: -1;
+
+	color: #34aba1;
+	float: left;
+
+	border: 1px solid #000;
+}
+.zero-line #no-style:nth-of-type(2) {
+	margin-left: 1120px;
+}
+a {
+	height: 100%;
+	width: 100%;
+
+	color: #34aba1;
+
+	text-decoration: none;
+
+	display: table;
+}
+rt {
+	display: table;
+
+	padding: 5px 0 0 5px;
+}
+p {
+	font-size: 8px;
+}
+tt {
+	font-size: 6px;
+}
+.zero-line, 
+.first-line, 
+.second-line, 
+.third-line, 
+.forth-line, 
+.five-line, 
+.six-line, 
+.seven-line, 
+.bottom1, 
+.bottom2 {
+	width: 1305px;
+}
+/*1260px;*/
+.content-div, 
+.no-content, 
+.brown, 
+.brown-second {
+    position: relative;
+
+	float: left;
+
+    margin-bottom: 5px;
+}
+.content-div::before,
+.no-content::before,
+.brown::before,
+.brown-second::before {
+    height: 107%;
+    width: 94%;
+
+    position: absolute;
+    z-index: -1;
+    top: -2%;
+    left: 0;
+
+    content: ""; 
+
+    background-image: url(../Imgs/Octagon.png);
+    background-repeat: repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.first-line #no-style:nth-of-type(3),
+.second-line .content-div:nth-of-type(3) {
+	margin-left: 700px;
+}
+.no-content rt {
+	height: 55px;
+
+	color: #34aba1;    
+}
+.bottom1 {
+	margin-top: 2%;  
+}
+.bottom2 {
+    margin-bottom: 150px;
+}
+.bottom1, .bottom2 {
+	margin-left: 10%;
+}
+/*@media screen and (min-width: 5724) {
+    .content-div::before,
+	.no-content::before,
+	.brown::before,
+	.brown-second::before {
+		height: 64%;
+	} 
+}*/
+@media screen and (min-width: 2155px) {
+    .content-div::before,
+	.no-content::before,
+	.brown::before,
+	.brown-second::before {
+		height: 106%;
+	} 
+}
+@media screen and (min-width: 1916px) {
+    .content-div::before,
+	.no-content::before,
+	.brown::before,
+	.brown-second::before {
+		height: 95%;
+	}   
+}
+@media screen and (min-width: 2874px) {
+    a {
+    	font-size: 14px;
+    } 
+}

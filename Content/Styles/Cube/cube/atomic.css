@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body, main {
+    height: 100%;
+    width: 100%;
+}
+body {
+	background: #000;
+}
+main {
+	position: relative;
+
+    display: table;
+
+    margin: auto;
+}
+div {
+	min-height: 19%;
+    min-width: 19%;
+
+    color: #34aba1;
+    float: left;
+
+    background: #000;
+ 	
+ 	border: 1px solid;
+}
+@keyframes rotateBig {
+	from,to{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    15%{
+        transform: rotateY(-90deg);
+    }
+    35%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    65%{
+        transform: rotateY(-270deg) rotateX(90deg);
+    }
+    85%{
+        transform: rotateX(90deg);
+    }
+}

@@ -1,0 +1,1699 @@
+<!DOCTYPE HTML[
+	<!ENTITY wiki "https://en.wikipedia.org/wiki/">
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" type="text/css" href="Content/Styles/periodic.css"/>
+		<meta itemprop="name" content="Periodic Table" />
+		<meta name="copyright" content="ogma ink &#0169; 2017" />
+		<meta name="date" content="Jan.6.2017" />
+		<meta name="searchDate" content="2017-01-06" />
+		<meta name="keywords" content="form, web, application, periodik, programmer" />
+		<meta name="language" content="en" />
+
+		<script src="Content/Scripts/jQuery/jquery-3.1.1.min.js"></script>
+
+		<title>Periodic Table</title>
+	</head>
+	<body>
+		<main>
+			<table>
+				<caption>PERIODIC TABLE OF THE ELEMENTS</caption>
+				<tbody>
+					<tr>
+						<th class="noStyle">
+							<p>1</p>
+							<p>IA</p>
+							<p>1A</p>
+						</th>
+						<th class="noStyleTh1" colspan="16"></th>
+						<th class="noStyle">
+							<p>18</p>
+							<p>VIIIA</p>
+							<p>8A</p>
+						</th>
+					</tr>
+					<tr>
+						<td class="lightBlue">
+							<a target="_blank" href="&wiki;Hydrogen">
+								<ruby>
+									<rt textContent="1">1</rt>
+									<rb textContent="H">H</rb>
+								</ruby>
+								<p textContent="Hydrogen">Hydrogen</p>
+								<tt textContent="1.008">1.008</tt>
+							</a>
+						</td>
+						<th class="noStyle">
+							<p>2</p>
+							<p>IIA</p>
+							<p>2A</p>
+						</th>
+						<th class="noStyleTh2" colspan="10" rowspan="2">
+							<div id="appearElement"></div>
+							<!-- <div id="marqueeElement"></div> -->
+							<div class="line" id="newHr">
+								<p class="firstP">Atomic Number</p>
+								<hr class="firstHr" />
+								<p class="secondP">Chemical Symbol</p>
+								<hr class="secondHr" />
+								<p class="thirdP">Element Name</p>
+								<hr class="thirdHr" />
+								<p class="forthP">Atomic Mass</p>
+								<hr class="forthHr" />
+							</div>
+						</th>
+						<th class="noStyle">
+							<p>13</p>
+							<p>IIIA</p>
+							<p>3A</p>
+						</th>
+						<th class="noStyle">
+							<p>14</p>
+							<p>IVA</p>
+							<p>4A</p>
+						</th>
+						<th class="noStyle">
+							<p>15</p>
+							<p>VA</p>
+							<p>5A</p>
+						</th>
+						<th class="noStyle">
+							<p>16</p>
+							<p>VIA</p>
+							<p>6A</p>
+						</th>
+						<th class="noStyle">
+							<p>17</p>
+							<p>VIIA</p>
+							<p>7A</p>
+						</th>
+						<td class="purple">
+							<a target="_blank" href="&wiki;Helium">
+								<ruby>
+									<rt textContent="2">2</rt>
+									<rb textContent="He">He</rb>
+								</ruby>
+								<p textContent="Helium">Helium</p>
+								<tt textContent="4.003">4.003</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="pink">
+							<a target="_blank" href="&wiki;Lithium">
+								<ruby>
+									<rt textContent="3">3</rt>
+									<rb textContent="Li">Li</rb>
+								</ruby>
+								<p textContent="Lithium">Lithium</p>
+								<tt textContent="6.94">6.94</tt>
+							</a>
+						</td>
+						<td class="orange">
+							<a target="_blank" href="&wiki;Beryllium">
+								<ruby>
+									<rt textContent="4">4</rt>
+									<rb textContent="Be">Be</rb>
+								</ruby>
+								<p textContent="Beryllium">Beryllium</p>
+								<tt textContent="9.012183">9.012183</tt>
+							</a>
+						</td>
+						<td class="blue">
+							<a target="_blank" href="&wiki;Boron">
+								<ruby>
+									<rt textContent="5">5</rt>
+									<rb textContent="B">B</rb>
+								</ruby>
+								<p textContent="Boron">Boron</p>
+								<tt textContent="10.81">10.81</tt>
+							</a>
+						</td>
+						<td class="lightBlue">
+							<a target="_blank" href="&wiki;Carbon">
+								<ruby>
+									<rt textContent="6">6</rt>
+									<rb textContent="C">C</rb>
+								</ruby>
+								<p textContent="Carbon">Carbon</p>
+								<tt textContent="12.011">12.011</tt>
+							</a>
+						</td>
+						<td class="lightBlue"> 
+							<a target="_blank" href="&wiki;Nitrogen">
+								<ruby>
+									<rt textContent="7">7</rt>
+									<rb textContent="N">N</rb>
+								</ruby>
+								<p textContent="Nitrogen">Nitrogen</p>
+								<tt textContent="14.007">14.007</tt>
+							</a>
+						</td>
+						<td class="lightBlue">
+							<a target="_blank" href="&wiki;Oxygen">
+								<ruby>
+									<rt textContent="8">8</rt>
+									<rb textContent="O">O</rb>
+								</ruby>
+								<p textContent="Oxygen">Oxygen</p>
+								<tt textContent="15.999">15.999</tt>
+							</a>
+						</td>
+						<td class="lightPurple">
+							<a target="_blank" href="&wiki;Fluorine">
+								<ruby>
+									<rt textContent="9">9</rt>
+									<rb textContent="F">F</rb>
+								</ruby>
+								<p textContent="Fluorine">Fluorine</p>
+								<tt textContent="18.998403163">18.998403163</tt>
+							</a>
+						</td>
+						<td class="purple">
+							<a target="_blank" href="&wiki;Neon">
+								<ruby>
+									<rt textContent="10">10</rt>
+									<rb textContent="Ne">Ne</rb>
+								</ruby>
+								<p textContent="Neon">Neon</p>
+								<tt textContent="20.1797">20.1797</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="pink">
+							<a target="_blank" href="&wiki;Sodium">
+								<ruby>
+									<rt textContent="11">11</rt>
+									<rb textContent="Na">Na</rb>
+								</ruby>
+								<p textContent="Sodium">Sodium</p>
+								<tt textContent="22.98976928">22.98976928</tt>
+							</a>
+						</td>
+						<td class="orange">
+							<a target="_blank" href="&wiki;Magnesium">
+								<ruby>
+									<rt textContent="12">12</rt>
+									<rb textContent="Mg">Mg</rb>
+								</ruby>
+								<p textContent="Magnesium">Magnesium</p>
+								<tt textContent="24.305">24.305</tt>
+							</a>
+						</td>
+						<th class="noStyle">
+							<p>3</p>
+							<p>IIIB</p>
+							<p>3B</p>
+						</th>
+						<th class="noStyle">
+							<p>4</p>
+							<p>IVB</p>
+							<p>4B</p>
+						</th>
+						<th class="noStyle">
+							<p>5</p>
+							<p>VB</p>
+							<p>5B</p>
+						</th>
+						<th class="noStyle">
+							<p>6</p>
+							<p>VIB</p>
+							<p>6B</p>
+						</th>
+						<th class="noStyle">
+							<p>7</p>
+							<p>VIIB</p>
+							<p>7B</p>
+						</th>
+						<th class="noStyle">
+							<p>8</p>
+							<p>VIII</p>
+							<p>8</p>
+						</th>
+						<th class="noStyle">
+							<p>9</p>
+							<p>VIII</p>
+							<p>8</p>
+						</th>
+						<th class="noStyle">
+							<p>10</p>
+							<p>VIII</p>
+							<p>8</p>
+						</th>
+						<th class="noStyle">
+							<p>11</p>
+							<p>IB</p>
+							<p>1B</p>
+						</th>
+						<th class="noStyle">
+							<p>12</p>
+							<p>IIB</p>
+							<p>2B</p>
+						</th>
+						<td class="green">
+							<a target="_blank" href="&wiki;Aluminium">
+								<ruby>
+									<rt textContent="13">13</rt>
+									<rb textContent="Al">Al</rb>
+								</ruby>
+								<p textContent="Aluminium">Aluminium</p>
+								<tt textContent="26.9815385">26.9815385</tt>
+							</a>
+						</td>
+						<td class="blue">
+							<a target="_blank" href="&wiki;Silicon">
+								<ruby>
+									<rt textContent="14">14</rt>
+									<rb textContent="Sl">Sl</rb>
+								</ruby>
+								<p textContent="Silicon">Silicon</p>
+								<tt textContent="28.085">28.085</tt>
+							</a>
+						</td>
+						<td class="lightBlue">
+							<a target="_blank" href="&wiki;Phosphorus">
+								<ruby>
+									<rt textContent="15">15</rt>
+									<rb textContent="P">P</rb>
+								</ruby>
+								<p textContent="Phosphorus">Phosphorus</p>
+								<tt textContent="30.973761998">30.973761998</tt>
+							</a>
+						</td>
+						<td class="lightBlue">
+							<a target="_blank" href="&wiki;Sulfur">
+								<ruby>
+									<rt textContent="16">16</rt>
+									<rb textContent="S">S</rb>
+								</ruby>
+								<p textContent="Sulfur">Sulfur</p>
+								<tt textContent="32.06">32.06</tt>
+							</a>
+						</td>
+						<td class="lightPurple">
+							<a target="_blank" href="&wiki;Chlorine">
+								<ruby>
+									<rt textContent="17">17</rt>
+									<rb textContent="Cl">Cl</rb>
+								</ruby>
+								<p textContent="Chlorine">Chlorine</p>
+								<tt textContent="35.45">35.45</tt>
+							</a>
+						</td>
+						<td class="purple">
+							<a target="_blank" href="&wiki;Argon">
+								<ruby>
+									<rt textContent="18">18</rt>
+									<rb textContent="Ar">Ar</rb>
+								</ruby>
+								<p textContent="Argon">Argon</p>
+								<tt textContent="39.948">39.948</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="pink">
+							<a target="_blank" href="&wiki;Potassium">
+								<ruby>
+									<rt textContent="19">19</rt>
+									<rb textContent="K">K</rb>
+								</ruby>
+								<p textContent="Potassium">Potassium</p>
+								<tt textContent="39.0983">39.0983</tt>
+							</a>
+						</td>
+						<td class="orange">
+							<a target="_blank" href="&wiki;Calcium">
+								<ruby>
+									<rt textContent="20">20</rt>
+									<rb textContent="Ca">Ca</rb>
+								</ruby>
+								<p textContent="Calcium">Calcium</p>
+								<tt textContent="40.078">40.078</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Scandium">
+								<ruby>
+									<rt textContent="21">21</rt>
+									<rb textContent="Sc">Sc</rb>
+								</ruby>
+								<p textContent="Scandium">Scandium</p>
+								<tt textContent="44.955908">44.955908</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Titanium">
+								<ruby>
+									<rt textContent="22">22</rt>
+									<rb textContent="Ti">Ti</rb>
+								</ruby>
+								<p textContent="Titanium">Titanium</p>
+								<tt textContent="47.867">47.867</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Vanadium">
+								<ruby>
+									<rt textContent="23">23</rt>
+									<rb textContent="V">V</rb>
+								</ruby>
+								<p textContent="Vanadium">Vanadium</p>
+								<tt textContent="50.9415">50.9415</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Chromium">
+								<ruby>
+									<rt textContent="24">24</rt>
+									<rb textContent="Cr">Cr</rb>
+								</ruby>
+								<p textContent="Chromium">Chromium</p>
+								<tt textContent="51.9961">51.9961</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Manganese">
+								<ruby>
+									<rt textContent="25">25</rt>
+									<rb textContent="Mn">Mn</rb>
+								</ruby>
+								<p textContent="Manganese">Manganese</p>
+								<tt textContent="54.938044">54.938044</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Iron">
+								<ruby>
+									<rt textContent="26">26</rt>
+									<rb textContent="Fe">Fe</rb>
+								</ruby>
+								<p textContent="Iron">Iron</p>
+								<tt textContent="55.845">55.845</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Cobalt">
+								<ruby>
+									<rt textContent="27">27</rt>
+									<rb textContent="Co">Co</rb>
+								</ruby>
+								<p textContent="Cobalt">Cobalt</p>
+								<tt textContent="58.933194">58.933194</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Nickel">
+								<ruby>
+									<rt textContent="28">28</rt>
+									<rb textContent="Ni">Ni</rb>
+								</ruby>
+								<p textContent="Nickel">Nickel</p>
+								<tt textContent="58.693">58.693</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Copper">
+								<ruby>
+									<rt textContent="29">29</rt>
+									<rb textContent="Cu">Cu</rb>
+								</ruby>
+								<p textContent="Copper">Copper</p>
+								<tt textContent="63.546">63.546</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Zinc">
+								<ruby>
+									<rt textContent="30">30</rt>
+									<rb textContent="Zn">Zn</rb>
+								</ruby>
+								<p textContent="Zinc">Zinc</p>
+								<tt textContent="65.38">65.38</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a target="_blank" href="&wiki;Gallium">
+								<ruby>
+									<rt textContent="31">31</rt>
+									<rb textContent="Ga">Ga</rb>
+								</ruby>
+								<p textContent="Gallium">Gallium</p>
+								<tt textContent="69.723">69.723</tt>
+							</a>
+						</td>
+						<td class="blue">
+							<a target="_blank" href="&wiki;Germanium">
+								<ruby>
+									<rt textContent="32">32</rt>
+									<rb textContent="Ge">Ge</rb>
+								</ruby>
+								<p textContent="Germanium">Germanium</p>
+								<tt textContent="72.63">72.63</tt>
+							</a>
+						</td>
+						<td class="blue">
+							<a target="_blank" href="&wiki;Arsenic">
+								<ruby>
+									<rt textContent="33">33</rt>
+									<rb textContent="As">As</rb>
+								</ruby>
+								<p textContent="Arsenic">Arsenic</p>
+								<tt textContent="74.921595">74.921595</tt>
+							</a>
+						</td>
+						<td class="lightBlue">
+							<a target="_blank" href="&wiki;Selenium">
+								<ruby>
+									<rt textContent="34">34</rt>
+									<rb textContent="Se">Se</rb>
+								</ruby>
+								<p textContent="Selenium">Selenium</p>
+								<tt textContent="78.97">78.97</tt>
+							</a>
+						</td>
+						<td class="lightPurple">
+							<a target="_blank" href="&wiki;Bromine">
+								<ruby>
+									<rt textContent="35">35</rt>
+									<rb textContent="Br">Br</rb>
+								</ruby>
+								<p textContent="Bromine">Bromine</p>
+								<tt textContent="79.904">79.904</tt>
+							</a>
+						</td>
+						<td class="purple">
+							<a target="_blank" href="&wiki;Krypton">
+								<ruby>
+									<rt textContent="36">36</rt>
+									<rb textContent="Kr">Kr</rb>
+								</ruby>
+								<p textContent="Krypton">Krypton</p>
+								<tt textContent="83.798">83.798</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="pink">
+							<a target="_blank" href="&wiki;Rubidium">
+								<ruby>
+									<rt textContent="37">37</rt>
+									<rb textContent="Rb">Rb</rb>
+								</ruby>
+								<p textContent="Rubidium">Rubidium</p>
+								<tt textContent="85.4678">85.4678</tt>
+							</a>
+						</td>
+						<td class="orange">
+							<a target="_blank" href="&wiki;Strontium">
+								<ruby>
+									<rt textContent="38">38</rt>
+									<rb textContent="Sr">Sr</rb>
+								</ruby>
+								<p textContent="Strontium">Strontium</p>
+								<tt textContent="87.62">87.62</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Yttrium">
+								<ruby>
+									<rt textContent="39">39</rt>
+									<rb textContent="Y">Y</rb>
+								</ruby>
+								<p textContent="Yttrium">Yttrium</p>
+								<tt textContent="88.90584">88.90584</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Zirconium">
+								<ruby>
+									<rt textContent="40">40</rt>
+									<rb textContent="Zr">Zr</rb>
+								</ruby>
+								<p textContent="Zirconium">Zirconium</p>
+								<tt textContent="91.224">91.224</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Niobium">
+								<ruby>
+									<rt textContent="41">41</rt>
+									<rb textContent="Nb">Nb</rb>
+								</ruby>
+								<p textContent="Niobium">Niobium</p>
+								<tt textContent="92.90637">92.90637</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Molybdenum">
+								<ruby>
+									<rt textContent="42">42</rt>
+									<rb textContent="Mo">Mo</rb>
+								</ruby>
+								<p textContent="Molybdenum">Molybdenum</p>
+								<tt textContent="95.95">95.95</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Technetium">
+								<ruby>
+									<rt textContent="43">43</rt>
+									<rb textContent="Tc">Tc</rb>
+								</ruby>
+								<p textContent="Technetium">Technetium</p>
+								<tt textContent="(98)">(98)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Ruthenium">
+								<ruby>
+									<rt textContent="44">44</rt>
+									<rb textContent="Ru">Ru</rb>
+								</ruby>
+								<p textContent="Ruthenium">Ruthenium</p>
+								<tt textContent="101.07">101.07</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Rhodium">
+								<ruby>
+									<rt textContent="45">45</rt>
+									<rb textContent="Rh">Rh</rb>
+								</ruby>
+								<p textContent="Rhodium">Rhodium</p>
+								<tt textContent="102.90550">102.90550</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Palladium">
+								<ruby>
+									<rt textContent="46">46</rt>
+									<rb textContent="Pd">Pd</rb>
+								</ruby>
+								<p textContent="Palladium">Palladium</p>
+								<tt textContent="106.42">106.42</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Silver">
+								<ruby>
+									<rt textContent="47">47</rt>
+									<rb textContent="Ag">Ag</rb>
+								</ruby>
+								<p textContent="Silver">Silver</p>
+								<tt textContent="107.8682">107.8682</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Cadmium">
+								<ruby>
+									<rt textContent="48">48</rt>
+									<rb textContent="Cd">Cd</rb>
+								</ruby>
+								<p textContent="Cadmium">Cadmium</p>
+								<tt textContent="112.414">112.414</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a target="_blank" href="&wiki;Indium">
+								<ruby>
+									<rt textContent="49">49</rt>
+									<rb textContent="In">In</rb>
+								</ruby>
+								<p textContent="Indium">Indium</p>
+								<tt textContent="114.818">114.818</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a target="_blank" href="&wiki;Tin">
+								<ruby>
+									<rt textContent="50">50</rt>
+									<rb textContent="Sn">Sn</rb>
+								</ruby>
+								<p textContent="Tin">Tin</p>
+								<tt textContent="118.710">118.710</tt>
+							</a>
+						</td>
+						<td class="blue">
+							<a target="_blank" href="&wiki;Antimony">
+								<ruby>
+									<rt textContent="51">51</rt>
+									<rb textContent="Sb">Sb</rb>
+								</ruby>
+								<p textContent="Antimony">Antimony</p>
+								<tt textContent="121.760">121.760</tt>
+							</a>
+						</td>
+						<td class="blue">
+							<a target="_blank" href="&wiki;Tellurium">
+								<ruby>
+									<rt textContent="52">52</rt>
+									<rb textContent="Te">Te</rb>
+								</ruby>
+								<p textContent="Tellurium">Tellurium</p>
+								<tt textContent="127.60">127.60</tt>
+							</a>
+						</td>
+						<td class="lightPurple">
+							<a target="_blank" href="&wiki;Iodine">
+								<ruby>
+									<rt textContent="53">53</rt>
+									<rb textContent="I">I</rb>
+								</ruby>
+								<p textContent="Iodine">Iodine</p>
+								<tt textContent="126.90447">126.90447</tt>
+							</a>
+						</td>
+						<td class="purple">
+							<a target="_blank" href="&wiki;Xenon">
+								<ruby>
+									<rt textContent="54">54</rt>
+									<rb textContent="Xe">Xe</rb>
+								</ruby>
+								<p textContent="Xenon">Xenon</p>
+								<tt textContent="131.293">131.293</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="pink">
+							<a target="_blank" href="&wiki;Caesium">
+								<ruby>
+									<rt textContent="55">55</rt>
+									<rb textContent="Cd">Cs</rb>
+								</ruby>
+								<p textContent="Caesium">Caesium</p>
+								<tt textContent="132.90545196">132.90545196</tt>
+							</a>
+						</td>
+						<td class="orange">
+							<a target="_blank" href="&wiki;Barium">
+								<ruby>
+									<rt textContent="56">56</rt>
+									<rb textContent="Ba">Ba</rb>
+								</ruby>
+								<p textContent="Barium">Barium</p>
+								<tt textContent="137.327">137.327</tt>
+							</a>
+						</td>
+						<td class="noMouse">
+							<marquee direction="left" scrolldelay="100">
+								<table>
+									<tr>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Lanthanum">
+												<ruby>
+													<rt textContent="57">57</rt>
+													<rb textContent="La">La</rb>
+												</ruby>
+												<p textContent="Lanthanum">Lanthanum</p>
+												<tt textContent="138.90547">138.90547</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Cerium">
+												<ruby>
+													<rt textContent="58">58</rt>
+													<rb textContent="Ce">Ce</rb>
+												</ruby>
+												<p textContent="Cerium">Cerium</p>
+												<tt textContent="140.116">140.116</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Praseodymium">
+												<ruby>
+													<rt textContent="59">59</rt>
+													<rb textContent="Pr">Pr</rb>
+												</ruby>
+												<p textContent="Praseodymium">Praseodymium</p>
+												<tt textContent="140.90766">140.90766</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Neodymium">
+												<ruby>
+													<rt textContent="60">60</rt>
+													<rb textContent="Nd">Nd</rb>
+												</ruby>
+												<p textContent="Neodymium">Neodymium</p>
+												<tt textContent="144.242">144.242</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Promethium">
+												<ruby>
+													<rt textContent="61">61</rt>
+													<rb textContent="Pm">Pm</rb>
+												</ruby>
+												<p textContent="Promethium">Promethium</p>
+												<tt textContent="(145)">(145)</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Samarium">
+												<ruby>
+													<rt textContent="62">62</rt>
+													<rb textContent="Sm">Sm</rb>
+												</ruby>
+												<p textContent="Samarium">Samarium</p>
+												<tt textContent="150.36">150.36</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Europium">
+												<ruby>
+													<rt textContent="63">63</rt>
+													<rb textContent="Eu">Eu</rb>
+												</ruby>
+												<p textContent="Europium">Europium</p>
+												<tt textContent="151.964">151.964</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Gadolinium">
+												<ruby>
+													<rt textContent="64">64</rt>
+													<rb textContent="Gd">Gd</rb>
+												</ruby>
+												<p textContent="Gadolinium">Gadolinium</p>
+												<tt textContent="157.25">157.25</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Terbium">
+												<ruby>
+													<rt textContent="65">65</rt>
+													<rb textContent="Tb">Tb</rb>
+												</ruby>
+												<p textContent="Terbium">Terbium</p>
+												<tt textContent="158.92535">158.92535</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Dysprosium">
+												<ruby>
+													<rt textContent="66">66</rt>
+													<rb textContent="Dy">Dy</rb>
+												</ruby>
+												<p textContent="Dysprosium">Dysprosium</p>
+												<tt textContent="162.500">162.500</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Holmium">
+												<ruby>
+													<rt textContent="67">67</rt>
+													<rb textContent="Ho">Ho</rb>
+												</ruby>
+												<p textContent="Holmium">Holmium</p>
+												<tt textContent="164.93033">164.93033</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Erbium">
+												<ruby>
+													<rt textContent="68">68</rt>
+													<rb textContent="Er">Er</rb>
+												</ruby>
+												<p textContent="Erbium">Erbium</p>
+												<tt textContent="167.259">167.259</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Thulium">
+												<ruby>
+													<rt textContent="69">69</rt>
+													<rb textContent="Tm">Tm</rb>
+												</ruby>
+												<p textContent="Thulium">Thulium</p>
+												<tt textContent="168.93422">168.93422</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Ytterbium">
+												<ruby>
+													<rt textContent="70">70</rt>
+													<rb textContent="Yb">Yb</rb>
+												</ruby>
+												<p textContent="Ytterbium">Ytterbium</p>
+												<tt textContent="173.054">173.054</tt>
+											</a>
+										</td>
+										<td class="brown">
+											<a target="_blank" href="&wiki;Lutetium">
+												<ruby>
+													<rt textContent="71">71</rt>
+													<rb textContent="Lu">Lu</rb>
+												</ruby>
+												<p textContent="Lutetium">Lutetium</p>
+												<tt textContent="174.9668">174.9668</tt>
+											</a>
+										</td>
+									</tr>
+								</table>
+							</marquee>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Hafnium">
+								<ruby>
+									<rt textContent="72">72</rt>
+									<rb textContent="Hf">Hf</rb>
+								</ruby>
+								<p textContent="Hafnium">Hafnium</p>
+								<tt textContent="178.49">178.49</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Tantalum">
+								<ruby>
+									<rt textContent="73">73</rt>
+									<rb textContent="Ta">Ta</rb>
+								</ruby>
+								<p textContent="Tantalum">Tantalum</p>
+								<tt textContent="180.94788">180.94788</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Tungsten">
+								<ruby>
+									<rt textContent="74">74</rt>
+									<rb textContent="W">W</rb>
+								</ruby>
+								<p textContent="Tungsten">Tungsten</p>
+								<tt textContent="183.84">183.84</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Rhenium">
+								<ruby>
+									<rt textContent="75">75</rt>
+									<rb textContent="Re">Re</rb>
+								</ruby>
+								<p textContent="Rhenium">Rhenium</p>
+								<tt textContent="186.207">186.207</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Osmium">
+								<ruby>
+									<rt textContent="76">76</rt>
+									<rb textContent="Os">Os</rb>
+								</ruby>
+								<p textContent="Osmium">Osmium</p>
+								<tt textContent="190.23">190.23</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Iridium">
+								<ruby>
+									<rt textContent="77">77</rt>
+									<rb textContent="Ir">Ir</rb>
+								</ruby>
+								<p textContent="Iridium">Iridium</p>
+								<tt textContent="192.217">192.217</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Platinum">
+								<ruby>
+									<rt textContent="78">78</rt>
+									<rb textContent="Pt">Pt</rb>
+								</ruby>
+								<p textContent="Platinum">Platinum</p>
+								<tt textContent="195.084">195.084</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Gold">
+								<ruby>
+									<rt textContent="79">79</rt>
+									<rb textContent="Au">Au</rb>
+								</ruby>
+								<p textContent="Gold">Gold</p>
+								<tt textContent="196.966569">196.966569</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a target="_blank" href="&wiki;Mercury">
+								<ruby>
+									<rt textContent="80">80</rt>
+									<rb textContent="Hg">Hg</rb>
+								</ruby>
+								<p textContent="Mercury">Mercury</p>
+								<tt textContent="200.59">200.59</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a target="_blank" href="&wiki;Thallium">
+								<ruby>
+									<rt textContent="81">81</rt>
+									<rb textContent="Tl">Tl</rb>
+								</ruby>
+								<p textContent="Thallium">Thallium</p>
+								<tt textContent="204.38">204.38</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a target="_blank" href="&wiki;Lead">
+								<ruby>
+									<rt textContent="82">82</rt>
+									<rb textContent="Pb">Pb</rb>
+								</ruby>
+								<p textContent="Lead">Lead</p>
+								<tt textContent="207.2">207.2</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a target="_blank" href="&wiki;Bismuth">
+								<ruby>
+									<rt textContent="83">83</rt>
+									<rb textContent="Bi">Bi</rb>
+								</ruby>
+								<p textContent="Bismuth">Bismuth</p>
+								<tt textContent="208.98040">208.98040</tt>
+							</a>
+						</td>
+						<td class="blue">
+							<a target="_blank" href="&wiki;Polonium">
+								<ruby>
+									<rt textContent="84">84</rt>
+									<rb textContent="Po">Po</rb>
+								</ruby>
+								<p textContent="Polonium">Polonium</p>
+								<tt textContent="(209)">(209)</tt>
+							</a>
+						</td>
+						<td class="lightPurple">
+							<a target="_blank" href="&wiki;Astatine">
+								<ruby>
+									<rt textContent="85">85</rt>
+									<rb textContent="At">At</rb>
+								</ruby>
+								<p textContent="Astatine">Astatine</p>
+								<tt textContent="(210)">(210)</tt>
+							</a>
+						</td>
+						<td class="purple">
+							<a target="_blank" href="&wiki;Radon">
+								<ruby>
+									<rt textContent="86">86</rt>
+									<rb textContent="Rn">Rn</rb>
+								</ruby>
+								<p textContent="Radon">Radon</p>
+								<tt textContent="(222)">(222)</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="pink">
+							<a target="_blank" href="&wiki;Francium">
+								<ruby>
+									<rt textContent="87">87</rt>
+									<rb textContent="Fr">Fr</rb>
+								</ruby>
+								<p textContent="Francium">Francium</p>
+								<tt textContent="(223)">(223)</tt>
+							</a>
+						</td>
+						<td class="orange">
+							<a target="_blank" href="&wiki;Radium">
+								<ruby>
+									<rt textContent="88">88</rt>
+									<rb textContent="Ra">Ra</rb>
+								</ruby>
+								<p textContent="Radium">Radium</p>
+								<tt textContent="(226)">(226)</tt>
+							</a>
+						</td>
+						<td class="noMouse">
+							<marquee direction="left" scrolldelay="100">
+								<table>
+										<tr>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="89">89</rt>
+														<rb textContent="Ac">Ac</rb>
+													</ruby>
+													<p textContent="Actinium">Actinium</p>
+													<tt textContent="(227)">(227)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="90">90</rt>
+														<rb textContent="Th">Th</rb>
+													</ruby>
+													<p textContent="Thorium">Thorium</p>
+													<tt textContent="232.0377">232.0377</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="91">91</rt>
+														<rb textContent="Pa">Pa</rb>
+													</ruby>
+													<p textContent="Protactinium">Protactinium</p>
+													<tt textContent="231.03588">231.03588</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="92">92</rt>
+														<rb textContent="U">U</rb>
+													</ruby>
+													<p textContent="Uranium">Uranium</p>
+													<tt textContent="238.02891">238.02891</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="93">93</rt>
+														<rb textContent="Np">Np</rb>
+													</ruby>
+													<p textContent="Neptunium">Neptunium</p>
+													<tt textContent="(237)">(237)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="94">94</rt>
+														<rb textContent="Pu">Pu</rb>
+													</ruby>
+													<p textContent="Plutonium">Plutonium</p>
+													<tt textContent="(244)">(244)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="95">95</rt>
+														<rb textContent="Am">Am</rb>
+													</ruby>
+													<p textContent="Americium">Americium</p>
+													<tt textContent="(243)">(243)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="96">96</rt>
+														<rb textContent="Cm">Cm</rb>
+													</ruby>
+													<p textContent="Curium">Curium</p>
+													<tt textContent="(247)">(247)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="97">97</rt>
+														<rb textContent="Bk">Bk</rb>
+													</ruby>
+													<p textContent="Berkelium">Berkelium</p>
+													<tt textContent="(247)">(247)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="98">98</rt>
+														<rb textContent="Cf">Cf</rb>
+													</ruby>
+													<p textContent="Californium">Californium</p>
+													<tt textContent="(251)">(251)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="99">99</rt>
+														<rb textContent="Es">Es</rb>
+													</ruby>
+													<p textContent="Einsteinium">Einsteinium</p>
+													<tt textContent="(252)">(252)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="100">100</rt>
+														<rb textContent="Fm">Fm</rb>
+													</ruby>
+													<p textContent="Fermium">Fermium</p>
+													<tt textContent="(257)">(257)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="101">101</rt>
+														<rb textContent="Md">Md</rb>
+													</ruby>
+													<p textContent="Mendelevium">Mendelevium</p>
+													<tt textContent="(258)">(258)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="102">102</rt>
+														<rb textContent="No">No</rb>
+													</ruby>
+													<p textContent="Nobelium">Nobelium</p>
+													<tt textContent="(259)">(259)</tt>
+												</a>
+											</td>
+											<td class="brownSecond">
+												<a href="#">
+													<ruby>
+														<rt textContent="103">103</rt>
+														<rb textContent="Lr">Lr</rb>
+													</ruby>
+													<p textContent="Lawrencium">Lawrencium</p>
+													<tt textContent="(262)">(262)</tt>
+												</a>
+											</td>
+										</tr>
+								</table>
+							</marquee>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="104">104</rt>
+									<rb textContent="Rf">Rf</rb>
+								</ruby>
+								<p textContent="Rutherfordium">Rutherfordium</p>
+								<tt textContent="(267)">(267)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="105">105</rt>
+									<rb textContent="Db">Db</rb>
+								</ruby>
+								<p textContent="Dubnium">Dubnium</p>
+								<tt textContent="(268)">(268)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="106">106</rt>
+									<rb textContent="Sg">Sg</rb>
+								</ruby>
+								<p textContent="Seaborgium">Seaborgium</p>
+								<tt textContent="(271)">(271)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="107">107</rt>
+									<rb textContent="Bh">Bh</rb>
+								</ruby>
+								<p textContent="Bohrium">Bohrium</p>
+								<tt textContent="(272)">(272)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="108">108</rt>
+									<rb textContent="Hs">Hs</rb>
+								</ruby>
+								<p textContent="Hassium">Hassium</p>
+								<tt textContent="(270)">(270)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="109">109</rt>
+									<rb textContent="Mt">Mt</rb>
+								</ruby>
+								<p textContent="Meitnerium">Meitnerium</p>
+								<tt textContent="(276)">(276)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="110">110</rt>
+									<rb textContent="Ds">Ds</rb>
+								</ruby>
+								<p textContent="Darmstadtium">Darmstadtium</p>
+								<tt textContent="(281)">(281)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="111">111</rt>
+									<rb textContent="Rg">Rg</rb>
+								</ruby>
+								<p textContent="Roentgenium">Roentgenium</p>
+								<tt textContent="(280)">(280)</tt>
+							</a>
+						</td>
+						<td class="yellow">
+							<a href="#">
+								<ruby>
+									<rt textContent="112">112</rt>
+									<rb textContent="Cn">Cn</rb>
+								</ruby>
+								<p textContent="Copernicium">Copernicium</p>
+								<tt textContent="(285)">(285)</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a href="#">
+								<ruby>
+									<rt textContent="113">113</rt>
+									<rb textContent="Nh">Nh</rb>
+								</ruby>
+								<p textContent="Nihonium">Nihonium</p>
+								<tt textContent="(284)">(284)</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a href="#">
+								<ruby>
+									<rt textContent="114">114</rt>
+									<rb textContent="Fl">Fl</rb>
+								</ruby>
+								<p textContent="Flerovium">Flerovium</p>
+								<tt textContent="(289)">(289)</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a href="#">
+								<ruby>
+									<rt textContent="115">115</rt>
+									<rb textContent="Mc">Mc</rb>
+								</ruby>
+								<p textContent="Moscovium">Moscovium</p>
+								<tt textContent="(288)">(288)</tt>
+							</a>
+						</td>
+						<td class="green">
+							<a href="#">
+								<ruby>
+									<rt textContent="116">116</rt>
+									<rb textContent="Lv">Lv</rb>
+								</ruby>
+								<p textContent="Livermorium">Livermorium</p>
+								<tt textContent="(293)">(293)</tt>
+							</a>
+						</td>
+						<td class="lightPurple">
+							<a href="#">
+								<ruby>
+									<rt textContent="117">117</rt>
+									<rb textContent="Ts">Ts</rb>
+								</ruby>
+								<p textContent="Tennessine">Tennessine</p>
+								<tt textContent="(294)">(294)</tt>
+							</a>
+						</td>
+						<td class="purple">
+							<a href="#">
+								<ruby>
+									<rt textContent="118">118</rt>
+									<rb textContent="Og">Og</rb>
+								</ruby>
+								<p textContent="Oganesson">Oganesson</p>
+								<tt textContent="(294)">(294)</tt>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+				<!-- <tbody>
+					<tr>
+						<th class="noStyle" colspan="2">
+							<p>Lanthanide</p>
+							<p>Series</p>
+						</th>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Lanthanum">
+								<ruby>
+									<rt textContent="57">57</rt>
+									<rb textContent="La">La</rb>
+								</ruby>
+								<p textContent="Lanthanum">Lanthanum</p>
+								<tt textContent="138.90547">138.90547</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Cerium">
+								<ruby>
+									<rt textContent="58">58</rt>
+									<rb textContent="Ce">Ce</rb>
+								</ruby>
+								<p textContent="Cerium">Cerium</p>
+								<tt textContent="140.116">140.116</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Praseodymium">
+								<ruby>
+									<rt textContent="59">59</rt>
+									<rb textContent="Pr">Pr</rb>
+								</ruby>
+								<p textContent="Praseodymium">Praseodymium</p>
+								<tt textContent="140.90766">140.90766</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Neodymium">
+								<ruby>
+									<rt textContent="60">60</rt>
+									<rb textContent="Nd">Nd</rb>
+								</ruby>
+								<p textContent="Neodymium">Neodymium</p>
+								<tt textContent="144.242">144.242</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Promethium">
+								<ruby>
+									<rt textContent="61">61</rt>
+									<rb textContent="Pm">Pm</rb>
+								</ruby>
+								<p textContent="Promethium">Promethium</p>
+								<tt textContent="(145)">(145)</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Samarium">
+								<ruby>
+									<rt textContent="62">62</rt>
+									<rb textContent="Sm">Sm</rb>
+								</ruby>
+								<p textContent="Samarium">Samarium</p>
+								<tt textContent="150.36">150.36</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Europium">
+								<ruby>
+									<rt textContent="63">63</rt>
+									<rb textContent="Eu">Eu</rb>
+								</ruby>
+								<p textContent="Europium">Europium</p>
+								<tt textContent="151.964">151.964</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Gadolinium">
+								<ruby>
+									<rt textContent="64">64</rt>
+									<rb textContent="Gd">Gd</rb>
+								</ruby>
+								<p textContent="Gadolinium">Gadolinium</p>
+								<tt textContent="157.25">157.25</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Terbium">
+								<ruby>
+									<rt textContent="65">65</rt>
+									<rb textContent="Tb">Tb</rb>
+								</ruby>
+								<p textContent="Terbium">Terbium</p>
+								<tt textContent="158.92535">158.92535</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Dysprosium">
+								<ruby>
+									<rt textContent="66">66</rt>
+									<rb textContent="Dy">Dy</rb>
+								</ruby>
+								<p textContent="Dysprosium">Dysprosium</p>
+								<tt textContent="162.500">162.500</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Holmium">
+								<ruby>
+									<rt textContent="67">67</rt>
+									<rb textContent="Ho">Ho</rb>
+								</ruby>
+								<p textContent="Holmium">Holmium</p>
+								<tt textContent="164.93033">164.93033</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Erbium">
+								<ruby>
+									<rt textContent="68">68</rt>
+									<rb textContent="Er">Er</rb>
+								</ruby>
+								<p textContent="Erbium">Erbium</p>
+								<tt textContent="167.259">167.259</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Thulium">
+								<ruby>
+									<rt textContent="69">69</rt>
+									<rb textContent="Tm">Tm</rb>
+								</ruby>
+								<p textContent="Thulium">Thulium</p>
+								<tt textContent="168.93422">168.93422</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Ytterbium">
+								<ruby>
+									<rt textContent="70">70</rt>
+									<rb textContent="Yb">Yb</rb>
+								</ruby>
+								<p textContent="Ytterbium">Ytterbium</p>
+								<tt textContent="173.054">173.054</tt>
+							</a>
+						</td>
+						<td class="brown">
+							<a target="_blank" href="&wiki;Lutetium">
+								<ruby>
+									<rt textContent="71">71</rt>
+									<rb textContent="Lu">Lu</rb>
+								</ruby>
+								<p textContent="Lutetium">Lutetium</p>
+								<tt textContent="174.9668">174.9668</tt>
+							</a>
+						</td>
+						<th class="noStyle"></th>
+					</tr>
+					<tr>
+						<th class="noStyle" colspan="2">
+							<p>Actinide</p>
+							<p>Series</p>
+						</th>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="89">89</rt>
+									<rb textContent="Ac">Ac</rb>
+								</ruby>
+								<p textContent="Actinium">Actinium</p>
+								<tt textContent="(227)">(227)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="90">90</rt>
+									<rb textContent="Th">Th</rb>
+								</ruby>
+								<p textContent="Thorium">Thorium</p>
+								<tt textContent="232.0377">232.0377</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="91">91</rt>
+									<rb textContent="Pa">Pa</rb>
+								</ruby>
+								<p textContent="Protactinium">Protactinium</p>
+								<tt textContent="231.03588">231.03588</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="92">92</rt>
+									<rb textContent="U">U</rb>
+								</ruby>
+								<p textContent="Uranium">Uranium</p>
+								<tt textContent="238.02891">238.02891</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="93">93</rt>
+									<rb textContent="Np">Np</rb>
+								</ruby>
+								<p textContent="Neptunium">Neptunium</p>
+								<tt textContent="(237)">(237)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="94">94</rt>
+									<rb textContent="Pu">Pu</rb>
+								</ruby>
+								<p textContent="Plutonium">Plutonium</p>
+								<tt textContent="(244)">(244)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="95">95</rt>
+									<rb textContent="Am">Am</rb>
+								</ruby>
+								<p textContent="Americium">Americium</p>
+								<tt textContent="(243)">(243)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="96">96</rt>
+									<rb textContent="Cm">Cm</rb>
+								</ruby>
+								<p textContent="Curium">Curium</p>
+								<tt textContent="(247)">(247)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="97">97</rt>
+									<rb textContent="Bk">Bk</rb>
+								</ruby>
+								<p textContent="Berkelium">Berkelium</p>
+								<tt textContent="(247)">(247)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="98">98</rt>
+									<rb textContent="Cf">Cf</rb>
+								</ruby>
+								<p textContent="Californium">Californium</p>
+								<tt textContent="(251)">(251)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="99">99</rt>
+									<rb textContent="Es">Es</rb>
+								</ruby>
+								<p textContent="Einsteinium">Einsteinium</p>
+								<tt textContent="(252)">(252)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="100">100</rt>
+									<rb textContent="Fm">Fm</rb>
+								</ruby>
+								<p textContent="Fermium">Fermium</p>
+								<tt textContent="(257)">(257)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="101">101</rt>
+									<rb textContent="Md">Md</rb>
+								</ruby>
+								<p textContent="Mendelevium">Mendelevium</p>
+								<tt textContent="(258)">(258)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="102">102</rt>
+									<rb textContent="No">No</rb>
+								</ruby>
+								<p textContent="Nobelium">Nobelium</p>
+								<tt textContent="(259)">(259)</tt>
+							</a>
+						</td>
+						<td class="brownSecond">
+							<a href="#">
+								<ruby>
+									<rt textContent="103">103</rt>
+									<rb textContent="Lr">Lr</rb>
+								</ruby>
+								<p textContent="Lawrencium">Lawrencium</p>
+								<tt textContent="(262)">(262)</tt>
+							</a>
+						</td>
+					</tr>
+				</tbody> -->
+				<tfoot>
+					<tr>
+						<td class="pink">
+							<p>Alkali</p>
+							<p>Metal</p>
+						</td>
+						<td class="orange">
+							<p>Alkaline</p>
+							<p>Earth</p>
+						</td>
+						<td class="orange">
+							<p>Trannsition</p>
+							<p>Metal</p>
+						</td>
+						<td class="green">
+							<p>Basic</p>
+							<p>Metal</p>
+						</td>
+						<td class="blue">
+							<p>Semimetal</p>
+						</td>
+						<td class="lightBlue">
+							<p>Nonmetal</p>
+						</td>
+						<td class="lightPurple">
+							<p>Halogen</p>
+						</td>
+						<td class="purple">
+							<p>Noble</p>
+							<p>Gas</p>
+						</td>
+						<td class="brown">
+							<p>Lanthanide</p>
+						</td>
+						<td class="brownSecond">
+							<p>Actinide</p>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</main>
+		<script src="Content/Scripts/periodic.js"></script>
+	</body>
+</html>

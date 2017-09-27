@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+	background: #000;
+    display: table;
+}
+main {
+	position: relative;
+
+    display: table-cell;
+    vertical-align: middle;
+
+    margin: auto;
+}
+div {
+	min-height: 19%;
+    min-width: 19%;
+
+    color: #34aba1;
+    float: left;
+
+    background: #000;
+ 	
+ 	border: 1px solid;
+}
+
+@keyframes spinner3{
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+/*@media screen and (min-width: 4293px) {
+    div {
+        min-width: 18%;;
+    }
+}*/

@@ -1,0 +1,62 @@
+.container {
+	height: 340px;
+    width: 340px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: auto;
+    
+    animation: rotateBig 15s linear infinite;
+    transform-style: preserve-3d;
+    transform: rotateY(30deg) rotateX(5deg);
+
+}
+.number {
+	font-size: 10px;
+
+	margin: 3px 0 0 3px;
+}
+.symbol, .name, .atom {
+	 text-align: center;
+}
+.symbol {
+	font-size: 17px;
+}
+.name {
+	font-size: 8px;
+}
+.atom {
+	font-size: 6px;
+
+    margin-top: 2px;
+}
+.front, .left, .right, .back, .top, .bottom {
+	height: 100%;
+    width: 100%;
+
+	position: absolute;
+	  
+    border: 2px solid #38ada2;
+}
+.front {
+    transform: translateZ(170px);
+}
+.top {
+	transform: rotateY(90deg) translateZ(173px);
+}
+.left {
+	transform: rotateY(90deg) rotateX(90deg) translateZ(173px);
+}
+.bottom {
+	transform: rotateX(-90deg) translateZ(173px);
+}
+.right {
+	transform: rotateY(180deg) rotateZ(90deg) translateZ(173px);
+}
+.back {
+	transform: rotateY(-90deg) rotateZ(90deg) translateZ(173px);
+}
